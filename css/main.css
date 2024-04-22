@@ -32,6 +32,7 @@ main .container {
     box-shadow: 0 0 15px rgb(0, 0, 0, 0.2);
     border-radius: 20px;
     position: relative;
+    padding-bottom: 20px;
 }
 main .container .main-img figure img {
     max-width: 100%;
@@ -106,7 +107,7 @@ main .container .cancel {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 0 50px;
+    margin: 25px auto;
     font-weight: bold;
     color: var(--Desaturated-blue);
     transition: var(--main-transition);
