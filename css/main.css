@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/imgs/pattern-background-desktop.svg');
+    background-image: url('../imgs/pattern-background-desktop.svg');
     background-repeat: no-repeat;
     background-color: var(--Pale-blue);
     }
@@ -116,7 +116,7 @@ main .container .cancel:hover {
 }
 @media (max-width: 500px){
     body {
-        background-image: url('/imgs/pattern-background-mobile.svg');
+        background-image: url('../imgs/pattern-background-mobile.svg');
     }
     main .container {
         width: 350px;
