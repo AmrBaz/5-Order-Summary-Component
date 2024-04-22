@@ -115,6 +115,9 @@ main .container .cancel:hover {
     color: var(--Dark-blue);
 }
 @media (max-width: 500px){
+    body {
+        background-image: url('/imgs/pattern-background-mobile.svg');
+    }
     main .container {
         width: 350px;
     }
