@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+body {
+    margin: 50px;
+    font-family: "Red Hat Display", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/imgs/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+    }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --White: hsl(0, 0%, 100%);
+    --main-transition: 0.4s;
+}
+hr {
+    margin: 10px 0;
+}
+main .container {
+    /* width: 768px; */
+    background-color: var(--White);
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.2);
+    border-radius: 20px;
+    position: relative;
+}
+main .container .main-img figure img {
+    max-width: 100%;
+}
+main .container .info {
+    width: 450px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .container .info h1 {
+    text-align: center;
+    color: var(--Dark-blue);
+    margin-bottom: 20px;
+}
+main .container .info p {
+    text-align: center;
+    color: var(--Desaturated-blue);
+}
+main .container .plan {
+    width: 350px;
+    margin: 0 auto 20px;
+    padding: 30px 0;
+    background-color: var(--Very-pale-blue);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main .container .plan .annual {
+    margin-right: 80px;
+}
+main .container .plan img {
+    margin-left: 15px;
+}
+main .container .plan a {
+    color: var(--Bright-blue);
+    font-weight: bold;
+    margin-right: 10px;
+    transition: var(--main-transition);
+}
+main .container .plan a:hover {
+    text-decoration-line: none;
+    opacity: 0.6;
+}
+main .container .pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .container .pay input {
+    outline: none;
+    border: none;
+    width: 350px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--Bright-blue);
+    color: var(--White);
+    font-weight: bold;
+    box-shadow: 0 0 20px hsl(245, 75%, 52%, 50%);
+    transition: var(--main-transition);
+}
+main .container .pay input:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+main .container .cancel {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 50px;
+    font-weight: bold;
+    color: var(--Desaturated-blue);
+    transition: var(--main-transition);
+}
+main .container .cancel:hover {
+    cursor: pointer;
+    color: var(--Dark-blue);
+}
+@media (max-width: 500px){
+    main .container {
+        width: 350px;
+    }
+    main .container .info {
+        width: 350px;
+    }
+    main .container .plan {
+        width: 300px;
+        padding: 20px 0;
+    }
+    main .container .plan .annual {
+        margin-right: 30px;
+    }
+    main .container .pay input {
+        width: 300px;
+    }
+}
